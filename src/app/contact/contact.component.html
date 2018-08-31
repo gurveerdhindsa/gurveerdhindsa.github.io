@@ -1,0 +1,32 @@
+<div class="info jumbotron contact" id="contact">
+  <div class="info-contact container">
+    <h1 class="info-contact--header animated">Contact</h1>
+    <h2 class="info-contact--subheader animated delay-1s">Want to chat about something?</h2>
+    <div class="info-contact--content col-md-9 animated">
+      <button (click)="openSidePanel()" type="button" class="info-contact--btn visible animated">CONTACT ME</button>
+    </div>
+
+    <div id="form" class="contact-form">
+      <a href="javascript:void(0)" class="closebtn" (click)="closeSidePanel()">&times;</a>
+      <h1 class="info-contact--title">Contact Gurveer</h1>
+      <form #contactForm="ngForm">
+        <div class="form-group col-xs-7">
+          <label class="contact-form--label" for="name">Name:</label>
+          <input type="name" class="form-control" id="name" required="true" [(ngModel)]="model.name" name="name">
+        </div>
+        <div class="form-group col-xs-10">
+          <label class="contact-form--label" for="email">Email Address:</label>
+          <input type="email" class="form-control" id="email" required="true" [(ngModel)]="model.email" name="email">
+        </div>
+        <div class="form-group col-xs-10">
+          <label class="contact-form--label" for="message">Message:</label>
+          <textarea class="form-control input-lg" rows="10" id="message" required="true" [(ngModel)]="model.message" name="message"></textarea>
+        </div>
+        <div class="form-group col-xs-10">
+          <button (click)="submitForm()" type="button" class="info-submit--btn">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

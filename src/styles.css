@@ -1,0 +1,33 @@
+body, html {
+    position: relative;
+    height: 100%;
+}
+
+.bg-img
+{
+    background-image: url('/assets/images/background.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.animated {
+    opacity: 0 !important;
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+.jumbotron {
+    background: none;
+    margin-bottom: 0px !important;
+    font-family: 'Karla', sans-serif;
+
+    .container {
+        margin-bottom: 100px;
+    }
+}
+
+
