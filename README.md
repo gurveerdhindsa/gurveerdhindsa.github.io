@@ -7,5 +7,6 @@ npm install
 ng build
 ng serve
 ```
-
+## TODO
+-Implement form submition for contact section
 
