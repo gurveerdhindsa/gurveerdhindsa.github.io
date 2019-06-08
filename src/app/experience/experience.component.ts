@@ -21,6 +21,10 @@ export class ExperienceComponent implements OnInit {
           $('.info-experience--subheader').addClass('fadeInDown');
       }, { offset: '90%' });
 
+      $('.info-experience--rbc').waypoint(function() {
+          $('.info-experience--rbc').addClass('fadeInUp');
+      }, { offset: '100%' });
+
       $('.info-experience--hsbc').waypoint(function() {
           $('.info-experience--hsbc').addClass('fadeInUp');
       }, { offset: '100%' });
