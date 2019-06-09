@@ -11,6 +11,6 @@ $ ng serve
 ## Deployment
 ```
 $ npm install -g angular-cli-ghpages
-$ build --prod --base-href "https://gurveerdhindsa.github.io/portfolio/"
+$ ng build --prod --base-href "https://gurveerdhindsa.github.io/portfolio/"
 $ ngh --no-silent
 ```
