@@ -37,6 +37,10 @@ export class SkillsComponent implements OnInit {
       $('.info-skills--other').waypoint(function() {
           $('.info-skills--other').addClass('fadeInLeft');
       }, { offset: '100%' });
+
+      $('.info-skills--learning').waypoint(function() {
+          $('.info-skills--learning').addClass('fadeInLeft');
+      }, { offset: '100%' });
   }
 
 }

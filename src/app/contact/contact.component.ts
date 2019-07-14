@@ -29,41 +29,45 @@ export class ContactComponent implements OnInit {
     }, { offset: '100%' });
   }
 
-      get currentForm() {
-        return JSON.stringify(this.model);
-      }
+  get currentForm() {
+    return JSON.stringify(this.model);
+  }
 
-      openSidePanel() {
-        document.getElementById("form").style.width = "700px";
-      }
+  openSidePanel() {
+      window.open("mailto:gurveerdhindsa@hotmail.com?cc=&subject=website&body=test");
 
-      closeSidePanel() {
-        document.getElementById("form").style.width = "0";
-      }
+    //document.getElementById("form").style.width = "700px";
+  }
 
-      submitForm() {
-        console.log("NAME: ", this.model.name);
-        console.log("EMAIL: ", this.model.email);
-        console.log("DESCRIPTIOn: ", this.model.message);
+  closeSidePanel() {
+    document.getElementById("form").style.width = "0";
+  }
 
-        fetch('/send', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: this.model.name,
-                email: this.model.email,
-                message: this.model.message
-            })
-        })
-        .then((res) => res.json())
-        .then((res) => {
-            console.log("This is the response: ", res);
-        })
-        .catch((err) => {
-            console.error("This is the error: ", err);
-        })
-      }
+  submitForm() {
+
+
+//    console.log("NAME: ", this.model.name);
+//    console.log("EMAIL: ", this.model.email);
+//    console.log("DESCRIPTIOn: ", this.model.message);
+//
+//    fetch('/send', {
+//        method: 'POST',
+//        headers: {
+//            'Accept': 'application/json',
+//            'Content-Type': 'application/json'
+//        },
+//        body: JSON.stringify({
+//            name: this.model.name,
+//            email: this.model.email,
+//            message: this.model.message
+//        })
+//    })
+//    .then((res) => res.json())
+//    .then((res) => {
+//        console.log("This is the response: ", res);
+//    })
+//    .catch((err) => {
+//        console.error("This is the error: ", err);
+//    })
+  }
 }
